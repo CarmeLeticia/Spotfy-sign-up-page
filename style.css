@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;800&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+:root {
+  --white: #fff;
+  --whitesmoke: #f9f9f9;
+  --light-grey: #ececec;
+  --grey: #c4c4c4;
+  --medium-grey: #a7a7a7;
+  --deep-grey: #343434;
+  --black: #000000;
+  --blue: #1b77f3;
+  --red: #cf3c3f;
+  --green_background_gradiente: linear-gradient(
+    47.14deg,
+    #186734 -3.17%,
+    #1db954 45.25%,
+    rgba(30, 215, 96, 0.58) 79.97%
+  );
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  min-height: 100vh;
+  background: var(--green_background_gradiente);
+  padding: clamp(35px, 8%, 70px);
+}
+
+.logo {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.login_title {
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.login_label {
+  display: block;
+  width: 70%;
+  margin-bottom: -10px;
+  margin-top: 8vh;
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  border: solid 1px var(--white);
+  border-radius: 40px;
+  outline: none;
+  font-size: 0.9em;
+  padding: 25px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+}
+
+::placeholder {
+  color: var(--white);
+  cursor: text;
+}
