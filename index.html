@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://kit.fontawesome.com/593e97b0f2.js" crossorigin="anonymous"></script>
   <title>Sign-up page</title>
 </head>
@@ -22,40 +23,46 @@
       <label for="" class="login_label">
         <input type="text" name="Username" class="input" placeholder="Username">
       </label>
-      
+
       <label for="" class="login_label">
         <input type="password" name="password" class="input" placeholder="**********">
       </label>
-    <!--
+      <!--
       <div class="login_icons">
         <button type="button" class="icons_button">
-          <img src="./assets/img/facebook-brands.svg" alt="facebook">
+          <i class="fa-brands fa-facebook fa-2x"></i>
         </button>
 
         <button type="button" class="icons_button">
-          <img src="./assets/img/google-brands.svg" alt="google">
+          <i class="fa-brands fa-google-plus fa-2x"></i>
         </button>
 
         <button type="button" class="icons_button">
-          <img src="./assets/img/apple-brands.svg" alt="apple">
+          <i class="fa-brands fa-apple fa-2x"></i>
         </button>
       </div>
+      -->
+
 
       <label for="" class="login_label--checkbox">
         <input type="checkbox" class="input--checkbox">
         Remember me
+        <a href="#" class="password_forget">Forgot password?</a>
       </label>
-      <button type="button" class="login_button" disabled>
-        login
-      </button>
 
-      <a href="#" class="password_forget">Forgot password?</a>
-      <a href="#" class="link_signup">Don't have account? Sign up!</a>
-
+      <section>
+        <div>
+          <button type="button" class="login_button">
+            login
+          </button>
+          Don't have account?
+          <a href="#" class="link_signup">Sign up!</a>
+        </div>
+      </section>
     </section>
-    -->
 
-      <section class="wallpaper"></section>
+
+    <section class="wallpaper"></section>
   </main>
 
   <script src="./script.js"></script>

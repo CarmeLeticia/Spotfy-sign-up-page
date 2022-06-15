@@ -10,10 +10,8 @@
 :root {
   --white: #fff;
   --whitesmoke: #f9f9f9;
-  --light-grey: #ececec;
-  --grey: #c4c4c4;
-  --medium-grey: #a7a7a7;
-  --deep-grey: #343434;
+  --light-grey: #1db954;
+  --deep-grey: #5bc981;
   --black: #000000;
   --blue: #1b77f3;
   --red: #cf3c3f;
@@ -25,12 +23,19 @@
   );
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+
 .login {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 700px;
+  max-width: 45vw;
   min-height: 100vh;
   background: var(--green_background_gradiente);
   padding: clamp(35px, 8%, 70px);
@@ -66,7 +71,73 @@
   color: var(--white);
 }
 
+.input:focus {
+  background-color: var(--deep-grey);
+  border: 2px solid var(--white);
+}
+
 ::placeholder {
   color: var(--white);
   cursor: text;
+  font: 0.7rem;
+}
+
+.login_icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 5vh;
+  width: 70%;
+}
+
+.icons_button {
+  width: 33.33%;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_label--checkbox {
+  margin-top: 4vh;
+  gap: 0.2vw;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+.password_forget {
+  margin-left: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.login_button {
+  display: flex;
+  margin-top: 8vh;
+  background-color: #1db954;
+  border: none;
+  border-radius: 40px;
+  padding: 15px 60px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.25);
+  transition: all 0.15s;
+  margin-bottom: 2vh;
+ 
+}
+
+.login_button:hover {
+  background-color: var(--deep-grey);
+  
+}
+
+.link_signup{
+  border-bottom: 1px solid var(--white);
 }
